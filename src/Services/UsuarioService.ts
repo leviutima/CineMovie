@@ -13,9 +13,9 @@ export const createUsuario = async (usuario: Usuario): Promise<void> => {
         });
 
         if (!response.ok) {
-            throw new Error('Erro ao criar conta, por favor tente mais tarde');
+            throw new Error('Erro ao criar conta, tente novamente');
         }
     } catch (error) {
-        throw new Error('Erro ao conectar-se com o servidor, tente novamente ou verifique a conexão com a internet');
+        throw new Error('Erro ao conectar-se com o servidor, tente novamente ou verifique a conexão com a internet ou com servidor');
     }
 };
