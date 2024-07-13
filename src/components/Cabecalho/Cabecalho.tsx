@@ -14,7 +14,7 @@ const Cabecalho = () => {
                 </LinkStyle>
                 <Menu/>
                 <div>
-                    <Botao path='*'>Perfil</Botao>
+                    <Botao path='*' width='6vw' height='4vh'>Perfil</Botao>
                 </div>
             </ContainerNav>
         </HeaderStyle>

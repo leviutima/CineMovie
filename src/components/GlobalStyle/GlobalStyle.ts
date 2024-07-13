@@ -18,6 +18,7 @@ export const SectionContainer = styled.section `
 export const LinkStyle = styled(Link)<propsGlobalCss> `
     text-decoration: none;
     color: var(--branco);
+    cursor: pointer;
 `
 
 export const LinkStyleButton = styled(Link) <propsGlobalCss>`
@@ -57,6 +58,9 @@ export const ImgContainer = styled.div `
 `
 
 export const ContainerForm = styled.div `
-    display: grid;
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 22px;
 `

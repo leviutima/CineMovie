@@ -18,9 +18,14 @@ export const BotaoStyle = styled.div<propsButton> `
     background-color: var(--vermelho);
     color: var(--branco);
     font-weight: 500;
+    cursor: pointer;
+    border: none;
 
-    
+    &:hover {
+        background-color: #750E21;
+    }
 `
+
 
 export const ImgProfile = styled.img`
     width: 2vw;

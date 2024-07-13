@@ -23,7 +23,7 @@ const LoginPage = () => {
                             <InputStyle type="password" placeholder="Digite sua senha..."></InputStyle>
                         </InputContainer>
                     </FormContainer>
-                    <Botao path="/Home">Entrar</Botao>
+                    <Botao path="/Home" width="7vw" height="4.5vh">Entrar</Botao>
                 </CardForm>
             </CardLogin>
             <span>Ainda não tem uma conta? Clique <LinkStyleButton to="/Cadastro">AQUI</LinkStyleButton> para se cadastrar</span>

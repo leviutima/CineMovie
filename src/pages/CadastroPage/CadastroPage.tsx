@@ -4,6 +4,7 @@ import userCadastro from '../../assets/images/cadastroImage.png';
 import { ContainerCadastro } from "./Cadastro.styled";
 import { createUsuario } from '../../Services/UsuarioService'; // importando o serviço
 import Botao from '../../components/Botao/Botao';
+import or from '../../assets/images/or.png'
 
 export interface Usuario {
     nome: string;
@@ -50,47 +51,50 @@ const CadastroPage: React.FC = () => {
                 <ContainerCadastro>
                     <form onSubmit={handleSubmit}>
                         <ContainerForm>
-                            <InputContainer>
-                                <span>Nome:</span>
-                                <InputStyle 
-                                    type="text" 
-                                    placeholder="Digite seu nome..." 
-                                    value={nome}
-                                    onChange={(e) => setNome(e.target.value)}
-                                />
-                            </InputContainer>
+                            <div>
+                                <InputContainer>
+                                    <span>Nome:</span>
+                                    <InputStyle 
+                                        type="text" 
+                                        placeholder="Digite seu nome..." 
+                                        value={nome}
+                                        onChange={(e) => setNome(e.target.value)}
+                                    />
+                                </InputContainer>
 
-                            <InputContainer>
-                                <span>Email:</span>
-                                <InputStyle 
-                                    type="email" 
-                                    placeholder="Digite seu email..." 
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                />
-                            </InputContainer>
+                                <InputContainer>
+                                    <span>Email:</span>
+                                    <InputStyle 
+                                        type="email" 
+                                        placeholder="Digite seu email..." 
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                </InputContainer>
 
-                            <InputContainer>
-                                <span>Senha:</span>
-                                <InputStyle 
-                                    type="password" 
-                                    placeholder="Digite sua senha..." 
-                                    value={senha}
-                                    onChange={(e) => setSenha(e.target.value)}
-                                />
-                            </InputContainer>
+                                <InputContainer>
+                                    <span>Senha:</span>
+                                    <InputStyle 
+                                        type="password" 
+                                        placeholder="Digite sua senha..." 
+                                        value={senha}
+                                        onChange={(e) => setSenha(e.target.value)}
+                                    />
+                                </InputContainer>
 
-                            <InputContainer>
-                                <span>Confirme sua senha:</span>
-                                <InputStyle 
-                                    type="password" 
-                                    placeholder="Confirme sua senha..." 
-                                    value={confirmaSenha}
-                                    onChange={(e) => setConfirmaSenha(e.target.value)}
-                                />
-                            </InputContainer>
-
-                            <Botao type="submit">Cadastrar</Botao>
+                                <InputContainer>
+                                    <span>Confirme sua senha:</span>
+                                    <InputStyle 
+                                        type="password" 
+                                        placeholder="Confirme sua senha..." 
+                                        value={confirmaSenha}
+                                        onChange={(e) => setConfirmaSenha(e.target.value)}
+                                    />
+                                </InputContainer>
+                            </div>
+                            <Botao type="submit" width='8vw'>Cadastrar</Botao>
+                            <img src={or}></img>
+                            <Botao path='/' width='8vw'>Login</Botao>
                         </ContainerForm>
                     </form>
                 </ContainerCadastro>
