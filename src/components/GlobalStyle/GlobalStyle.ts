@@ -5,6 +5,16 @@ interface propsGlobalCss {
     to: string;
 }
 
+export const SectionContainer = styled.section `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    flex-direction: column;
+    margin-top: 5%;
+`
+
 export const LinkStyle = styled(Link)<propsGlobalCss> `
     text-decoration: none;
     color: var(--branco);
@@ -19,8 +29,12 @@ export const LinkStyleButton = styled(Link) <propsGlobalCss>`
 `
 
 export const InputStyle = styled.input `
-    width: 20vw;
-    height: 4vh;
+    width: 25vw;
+    height: 6vh;
+    padding-left: 10px;
+
+    border-radius: 10px;
+    border: none;
 `
 
 export const InputContainer = styled.label`
@@ -32,4 +46,17 @@ export const FormContainer = styled.form `
     display: grid;
     color: var(--branco);
     gap: 19px;
+    
+`
+
+export const ImgContainer = styled.div `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+`
+
+export const ContainerForm = styled.div `
+    display: grid;
+    gap: 15px;
 `

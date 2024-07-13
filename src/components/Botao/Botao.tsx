@@ -4,14 +4,16 @@ import { LinkStyleButton } from "../GlobalStyle/GlobalStyle";
 
 interface propsButton {
     children?: React.ReactNode;
-    path:string
+    path:string;
+    width?: string;
+    height?: string;
 }
 
-const Botao = ({children, path}: propsButton) => {
+const Botao:  React.FC<propsButton>  = ({children, path, width, height}) => {
     return(
         <>
         <LinkStyleButton to={path}>
-            <BotaoStyle>
+            <BotaoStyle $width={width as string} $height={height as string}> 
                 <span>{children}</span>
             </BotaoStyle>
         </LinkStyleButton>
