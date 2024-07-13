@@ -42,7 +42,7 @@ export const InputContainer = styled.label`
     flex-direction: column;
 `
 
-export const FormContainer = styled.form `
+export const FormContainer = styled.div `
     display: grid;
     color: var(--branco);
     gap: 19px;
