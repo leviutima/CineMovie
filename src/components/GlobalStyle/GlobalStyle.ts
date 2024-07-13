@@ -64,3 +64,18 @@ export const ContainerForm = styled.div `
 
     gap: 22px;
 `
+
+export const SectionMain = styled.section `
+    display: flex;
+    margin-left: 10%;
+
+    & h2 {
+        color: var(--branco);
+        font-size: 42px;
+        font-weight: 500;
+    }
+`
+
+export const DivColumn = styled.div `
+
+`
