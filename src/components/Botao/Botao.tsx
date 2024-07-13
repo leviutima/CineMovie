@@ -1,7 +1,6 @@
 import React from "react"
-import { BotaoStyle, ImgProfile } from "./Botao.styled";
-import { LinkStyle } from "../GlobalStyle/GlobalStyle";
-import user from '../../assets/images/userNoPhoto.png'
+import { BotaoStyle } from "./Botao.styled";
+import { LinkStyleButton } from "../GlobalStyle/GlobalStyle";
 
 interface propsButton {
     children?: React.ReactNode;
@@ -11,12 +10,11 @@ interface propsButton {
 const Botao = ({children, path}: propsButton) => {
     return(
         <>
-        <LinkStyle to={path}>
+        <LinkStyleButton to={path}>
             <BotaoStyle>
-                <ImgProfile src={user}></ImgProfile>
                 <span>{children}</span>
             </BotaoStyle>
-        </LinkStyle>
+        </LinkStyleButton>
         </>
     )
 }

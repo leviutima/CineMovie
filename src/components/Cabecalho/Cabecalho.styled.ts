@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.header `
-    margin-top: 2%;
+    margin-top: 1%;
 `
 
 export const ContainerNav = styled.nav `

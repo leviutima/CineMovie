@@ -9,7 +9,7 @@ const Cabecalho = () => {
         <>
         <HeaderStyle>
             <ContainerNav>
-                <LinkStyle to='*'>
+                <LinkStyle to='/Home'>
                     <ImgLogo src={logo}></ImgLogo>
                 </LinkStyle>
                 <Menu/>

@@ -7,10 +7,14 @@ export const BotaoStyle = styled.div `
     gap: 5px;
 
     width: 6vw;
+    height: 4.5vh;
     border-radius: 10px;
 
     background-color: var(--vermelho);
     color: var(--branco);
+    font-weight: 500;
+
+    
 `
 
 export const ImgProfile = styled.img`

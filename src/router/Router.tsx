@@ -1,16 +1,19 @@
 
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './Router.css'
-import Cabecalho from '../components/Cabecalho/Cabecalho'
+import Home from '../pages/Home/Home'
+import LoginPage from '../pages/LoginPage/LoginPage'
+import CadastroPage from '../pages/CadastroPage/CadastroPage'
 
 function App() {
 
   return (
     <>
     <BrowserRouter>
-    <Cabecalho/>
         <Routes>
-
+            <Route path='/' element={ <LoginPage/> }/>
+            <Route path='/Cadastro' element= { <CadastroPage/> }/>
+            <Route path='/Home' element={ <Home/> }/>
         </Routes>
     </BrowserRouter>
     </>
